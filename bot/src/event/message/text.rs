@@ -38,7 +38,7 @@ pub async fn text_event(
 ) -> Result<Option<Vec<MessageObject>>, AppError> {
     let messages: Vec<MessageObject> = match message.text.as_str() {
         "こんにちは" => vec![
-            TextMessage::builder().text("Hello, World").build().into(),
+            TextMessage::builder().text("こんにちは世界").build().into(),
         ],
         "複数メッセージ" => vec![
             TextMessage::builder().text("Hello, user").build().into(),
