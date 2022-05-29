@@ -40,6 +40,9 @@ pub async fn text_event(
         "こんにちは" => vec![
             TextMessage::builder().text("こんにちは世界").build().into(),
         ],
+        "おはよう" => vec![
+            TextMessage::builder().text("Good Morning!").build().into(),
+        ],
         "複数メッセージ" => vec![
             TextMessage::builder().text("Hello, user").build().into(),
             TextMessage::builder().text("May I help you?").build().into(),
